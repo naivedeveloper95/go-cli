@@ -5,8 +5,8 @@ package cmd
 
 import (
 	"os"
+	"toolbox/cmd/net"
 
-	"github.com/AlexsJones/toolbox/cmd/net"
 	"github.com/spf13/cobra"
 )
 
