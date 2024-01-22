@@ -5,6 +5,7 @@ package cmd
 
 import (
 	"os"
+	"toolbox/cmd/info"
 	"toolbox/cmd/net"
 
 	"github.com/spf13/cobra"
@@ -36,6 +37,7 @@ func Execute() {
 
 func addSubCommandPalettes() {
 	rootCmd.AddCommand(net.NetCmd)
+	rootCmd.AddCommand(info.InfoCmd)
 }
 
 func init() {

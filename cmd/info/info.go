@@ -4,18 +4,16 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 package info
 
 import (
-	"fmt"
-
 	"github.com/spf13/cobra"
 )
 
 // infoCmd represents the info command
-var infoCmd = &cobra.Command{
+var InfoCmd = &cobra.Command{
 	Use:   "info",
 	Short: "All things information",
 	Long:  `This command will show information about the specified commands.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("info called")
+		cmd.Help()
 	},
 }
 
