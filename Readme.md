@@ -1,4 +1,4 @@
-# Project Name
+# CLI Application using Cobra-CLI
 
 A simple example of building a cli tool using cobra-cli and viper in golang. Happy coding!
 
