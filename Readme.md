@@ -1,3 +1,5 @@
+[![SLSA Go releaser](https://github.com/naivedeveloper95/go-cli/actions/workflows/go-ossf-slsa3-publish.yml/badge.svg?branch=master)](https://github.com/naivedeveloper95/go-cli/actions/workflows/go-ossf-slsa3-publish.yml)
+
 # CLI Application using Cobra-CLI
 
 A simple example of building a cli tool using cobra-cli and viper in golang. Happy coding!
