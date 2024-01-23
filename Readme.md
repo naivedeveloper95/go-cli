@@ -6,7 +6,6 @@ A simple example of building a cli tool using cobra-cli and viper in golang. Hap
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 - [Contributing](#contributing)
 
 ## Installation
@@ -19,10 +18,6 @@ A simple example of building a cli tool using cobra-cli and viper in golang. Hap
 
     - cd into the project directory
     - try - go run main.go
-
-## License
-
-This project is licensed under the MIT License
 
 ## Contributing
 
