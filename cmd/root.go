@@ -39,9 +39,27 @@ func Execute() {
 	}
 }
 
+func setDefaults() {
+	viper.SetDefault("port", 8080)
+}
+
 func init() {
 	cobra.OnInitialize(initConfig)
 
+	viper.SetDefault("name", "Alex")
+	viper.SetEnvPrefix("TOOLBOX")
+	// setDefaults()
+
+	viper.BindEnv("name")
+
+	err := viper.WriteConfigAs("toolbox.backup.yml")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	// viper.Set("name", "Alex")
+
+	fmt.Println("name: ", viper.GetString("name"))
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
